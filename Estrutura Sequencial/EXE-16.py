@@ -18,6 +18,8 @@ if litros_tinta > 0:
 
          preco_total = quantidade_latas_arredondada * 80 
 
+    else:
+         preco_total = quantidade_latas_arredondada
+
 print(f'Área de {area_pintura} metros')
-print(f'Você precisa de {litros_tinta:.0f} litros de tinta')
-print(f'Você precisa comprar {quantidade_latas_arredondada} latas no valor total de R${preco_total}')
+print(f'Você precisa comprar {quantidade_latas_arredondada} lata no valor total de R${preco_total}')
