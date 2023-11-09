@@ -2,5 +2,6 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
-    "python.formatting.provider": "none"
+    "python.formatting.provider": "none", // Mantenha isso se preferir usar o formato específico do MS Python
+    "editor.formatOnSave": true
 }
