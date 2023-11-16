@@ -1,4 +1,4 @@
-# Faça um Programa que leia um número e exiba o dia correspondente da semana. 
+# 13 - Faça um Programa que leia um número e exiba o dia correspondente da semana. 
 # (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido
 
 dia_semana = int(input('Digite um número de 1 a 7 para os dias da semanas (1-Domingo, 2- Segunda, etc.): '))
