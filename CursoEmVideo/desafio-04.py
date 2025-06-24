@@ -12,9 +12,3 @@ print('Está em minúsculas? ', n.islower())
 print('Está capitalizada? ', n.istitle())
 
 
-
-print(n.isascii())
-print(n.isdecimal())
-print(n.isdigit())
-print(n.isidentifier())
-print(n.isprintable())
