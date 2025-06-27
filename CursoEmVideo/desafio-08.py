@@ -1,9 +1,15 @@
 print('='*11,'| DESAFIO 08 |', '='*11)
 # Escreva um programa que leia um valor em metros e o exiba convertido em centímeros e milímetros
+# Mostre também a quatidade de quilômetros, hectômetros, decâmetros, decímetros
 
-valor = int(input('Informe um valor em metros: '))
+valor = float(input('Informe um valor em metros: '))
 
-centimetros = valor * 100
-milimetros = valor * 1000
+km = valor * 0.001
+hm = valor * 0.01
+dam = valor * 0.1
+dm = valor * 10
+cm = valor * 100
+mm= valor * 1000
 
-print(f'{valor} metros em centímetros é {centimetros}cm e em milímetros é {milimetros}mm')
+print(f'Os valores são: \n')
+print(f' Km = {km}km\n Hm = {hm}hm\n Dam = {dam}dam\n Dm = {dm}dm\n Cm = {cm}cm\n Mm = {mm}mm')

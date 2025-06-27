@@ -3,6 +3,6 @@ print('='*11,'| DESAFIO 07 |', '='*11)
 
 nota1 = float(input('Informe sua primeira nota: '))
 nota2 = float(input('Informe sua segunda nota: '))
-media = (nota1+nota2)/2
+media = (nota1 + nota2) / 2
 
-print(f'A média das notas {nota1} e {nota2} é {media}')
+print(f'A média das notas {nota1:.1f} e {nota2:.1f} é {media:.1f}')
