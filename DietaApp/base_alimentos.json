@@ -1,0 +1,139 @@
+[
+  {
+    "nome": "Queijo Mussarela",
+    "porcao": 30,
+    "proteina": 6.6,
+    "carboidrato": 0.6,
+    "gordura": 7.5,
+    "tipo": "un"
+  },
+  {
+    "nome": "Queijo Minas",
+    "porcao": 30,
+    "proteina": 6.3,
+    "carboidrato": 0.5,
+    "gordura": 5.4,
+    "tipo": "g"
+  },
+  {
+    "nome": "Ovo",
+    "porcao": 1,
+    "proteina": 6.5,
+    "carboidrato": 0.6,
+    "gordura": 5.3,
+    "tipo": "un"
+  },
+  {
+    "nome": "Pão de Forma Integral",
+    "porcao": 50,
+    "proteina": 4.6,
+    "carboidrato": 24.0,
+    "gordura": 1.8,
+    "tipo": "un"
+  },
+  {
+    "nome": "Pão de Sal",
+    "porcao": 50,
+    "proteina": 5.5,
+    "carboidrato": 28.0,
+    "gordura": 1.2,
+    "tipo": "un"
+  },
+  {
+    "nome": "Pão de Doce",
+    "porcao": 50,
+    "proteina": 4.0,
+    "carboidrato": 30.0,
+    "gordura": 4.0,
+    "tipo": "un"
+  },
+  {
+    "nome": "Cuscuz",
+    "porcao": 50,
+    "proteina": 2.0,
+    "carboidrato": 20.0,
+    "gordura": 0.5,
+    "tipo": "g"
+  },
+  {
+    "nome": "Arroz",
+    "porcao": 100,
+    "proteina": 2.5,
+    "carboidrato": 28.0,
+    "gordura": 0.3,
+    "tipo": "g"
+  },
+  {
+    "nome": "Feijão",
+    "porcao": 100,
+    "proteina": 8.0,
+    "carboidrato": 14.0,
+    "gordura": 0.5,
+    "tipo": "g"
+  },
+  {
+    "nome": "Filé de Frango",
+    "porcao": 100,
+    "proteina": 31.0,
+    "carboidrato": 0.0,
+    "gordura": 3.6,
+    "tipo": "g"
+  },
+  {
+    "nome": "Carne Vermelha Magra",
+    "porcao": 100,
+    "proteina": 26.0,
+    "carboidrato": 0.0,
+    "gordura": 8.0,
+    "tipo": "g"
+  },
+  {
+    "nome": "Whey Protein",
+    "porcao": 30,
+    "proteina": 24.0,
+    "carboidrato": 2.0,
+    "gordura": 1.5,
+    "tipo": "g"
+  },
+  {
+    "nome": "Pasta de Amendoim",
+    "porcao": 15,
+    "proteina": 4.0,
+    "carboidrato": 3.0,
+    "gordura": 8.0,
+    "tipo": "g"
+  },
+  {
+    "nome": "Banana",
+    "porcao": 100,
+    "proteina": 1.3,
+    "carboidrato": 22.8,
+    "gordura": 0.3,
+    "tipo": "un"
+  },
+  {
+    "nome": "Requeijão Light",
+    "porcao": 15,
+    "proteina": 1.5,
+    "carboidrato": 1.0,
+    "gordura": 3.0,
+    "tipo": "g"
+  },
+  {
+    "nome": "Batata",
+    "porcao": 100,
+    "proteina": 2.0,
+    "carboidrato": 20.0,
+    "gordura": 0.1,
+    "tipo": "g"
+  },
+  {
+    "nome": "Aveia",
+    "porcao": 30,
+    "proteina": 4.0,
+    "carboidrato": 20.0,
+    "gordura": 2.5,
+    "tipo": "g"
+   }
+
+]
