@@ -1,0 +1,8 @@
+- Módulo random 
+  - shuffle serve para embaralhar variáveis em listas.
+- Módulo pygame (deve ser importado - pip install pygame)
+  - pygame.init() - inicializa o pygame
+  - pygame.mixer.music.load('musica aqui.mp3') utiliza para carregar a música
+  - pygame.mixer.music.play() reproduz a música
+  - while pygame.mixer.music.get_busy():
+      time.sleep(1)
