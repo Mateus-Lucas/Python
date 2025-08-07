@@ -6,3 +6,4 @@
   - pygame.mixer.music.play() reproduz a música
   - while pygame.mixer.music.get_busy():
       time.sleep(1)
+- Replace: Substitui um trecho por outro
