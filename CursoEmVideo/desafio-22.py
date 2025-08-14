@@ -1,4 +1,4 @@
-print('=' * 11, '| DESAFIO 21 |', '=' * 11)
+print('=' * 11, '| DESAFIO 22 |', '=' * 11)
 
 """
 Crie um programa que leia o nome completo de uma pessoa e mostre:
