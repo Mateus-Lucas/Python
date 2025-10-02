@@ -1,19 +1,22 @@
-print('=' * 20, '| Desafio 20 |' ,'=' * 20)
+print('=' * 20, '| Desafio 20 |', '=' * 20)
 
-'''
- Desenvolvea um programa que leia o comprimento de três retas e diga ao usuário se elas
+"""
+ Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas
  podem ou não formar um triângulo
-'''
-print('-=-' * 20)
-print('ANALISADOR DE TRIÂNGULOS')
-print('-=-' * 20)
+"""
 
-a = float(input('Primeiro segmento: '))
-b = float(input('Segundo segmento: '))
-c = float(input('Terceiro segmento: '))
+print('\033[1;34m' + '-=-' * 20 + '\033[m')
+print('\033[1;36m{:^60}\033[m'.format('ANALISADOR DE TRIÂNGULOS'))
+print('\033[1;34m' + '-=-' * 20 + '\033[m')
 
-# Verifica a condição para formar um triângulo
+# Entrada de dados com destaque
+a = float(input('\033[4;30;46mPrimeiro segmento: \033[m '))
+b = float(input('\033[4;30;46mSegundo segmento: \033[m '))
+c = float(input('\033[4;30;46mTerceiro segmento: \033[m '))
+
+# Verificação da condição do triângulo
+print('\n\033[1;35mResultado:\033[m')
 if a + b > c and a + c > b and b + c > a:
-    print('Os segmentos formam um triângulo')
+    print('\033[1;32mOs segmentos acima PODEM formar um triângulo!\033[m')
 else:
-    print('Os segmentos não formam um triângulo')
+    print('\033[1;31mOs segmentos acima NÃO PODEM formar um triângulo!\033[m')
