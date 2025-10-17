@@ -18,9 +18,9 @@ linha()
 preco = float(input('Informe o valor do produto: R$'))
 pagamento = int(input(
     '\nInforme a forma de pagamento:\n'
-    '1 - Dinheiro\n'
-    '2 - Cheque\n'
-    '3 - Cartão de Crédito\n> '
+    '[ 1 ] - Dinheiro\n'
+    '[ 2 ] - Cheque\n'
+    '[ 3 ] - Cartão de Crédito\n> '
 ))
 
 if pagamento in [1, 2, 3]:
