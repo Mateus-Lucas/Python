@@ -5,59 +5,39 @@ jogador PERDER, mostrando o total de vitórias que ele conquistou no final do jo
 
 from random import randint
 
-def linha():
-    print('-' * 40)
+v = 0  # contador de vitórias
 
-vitorias = 0
-
-while True:
-    # escolha par ou ímpar
+while True:  # loop principal do jogo
+    # --- validação do número digitado pelo jogador ---
     while True:
-        try:
-            escolha = int(input(
-                'Escolha par ou ímpar:\n'
-                '[1] para par\n'
-                '[2] para ímpar\n'
-            ))
-            if escolha in (1, 2):
-                break
-            else:
-                print('Opção inválida. Digite 1 ou 2.')
-        except ValueError:
-            print('Entrada inválida. Digite um número (1 ou 2).')
+        entrada = input('Diga um valor (0 a 10): ').strip()
+        if entrada.isdigit() and 0 <= int(entrada) <= 10:
+            jogador = int(entrada)
+            break
+        print('Valor inválido. Digite um número entre 0 e 10.')
 
-    computador = 'ímpar' if escolha == 1 else 'par'
-    linha()
-    print(f'COMPUTADOR: Certo, eu escolho {computador}')
+    computador = randint(0, 10)  # número aleatório do computador
+    total = jogador + computador  # soma dos valores
 
-    # número do jogador (com validação)
+    # --- validação da escolha par/ímpar ---
     while True:
-        try:
-            quant_jogador = int(input('Informe um valor de 1 a 10 para jogar: '))
-            if 1 <= quant_jogador <= 10:
-                break
-            else:
-                print('Valor fora do intervalo. Tente novamente.')
-        except ValueError:
-            print('Entrada inválida. Digite um número inteiro.')
+        tipo = input('Par ou Ímpar [P/I]: ').strip().upper()
+        if tipo != '' and tipo[0] in 'PI':
+            tipo = tipo[0]
+            break
+        print('Opção inválida. Digite P ou I.')
 
-    # número do computador e soma
-    quant_computador = randint(1, 10)
-    soma = quant_computador + quant_jogador
+    print(f'Você jogou {jogador} e o computador {computador}. Total de {total}.')
 
-    linha()
-    print(f'O computador escolheu {quant_computador} e você escolheu {quant_jogador} resultando em {soma}')
+    # --- determina se o total é par ou ímpar ---
+    resultado = 'P' if total % 2 == 0 else 'I'
 
-    # determina par/ímpar do resultado
-    resultado = 'par' if soma % 2 == 0 else 'ímpar'
-
-    # verifica se o jogador venceu
-    if (escolha == 1 and resultado == 'par') or (escolha == 2 and resultado == 'ímpar'):
-        vitorias += 1
-        print('Você venceu! Vamos jogar novamente...')
-        linha()
-        # continua o loop para próxima rodada
+    # --- verifica vitória ou derrota ---
+    if tipo == resultado:
+        v += 1
+        print('Você VENCEU! Vamos jogar novamente...')
+        print('-' * 40)
     else:
-        print('Você perdeu, que pena )=')
-        print(f'Você ganhou no total {vitorias} vezes')
+        print('Você PERDEU!')
+        print(f'GAME OVER! Você venceu {v} vezes.')
         break
