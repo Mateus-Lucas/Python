@@ -1,4 +1,4 @@
-print('\033[1;33m' + '=' * 20, '| Desafio 68 |', '=' * 20 + '\033[m')
+print('\033[1;33m' + '=' * 20, '| Desafio 70 |', '=' * 20 + '\033[m')
 
 '''
 Crie um programa que leia o nome e o preço de vários produtos.
