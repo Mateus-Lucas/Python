@@ -1,4 +1,4 @@
-print('\033[1;33m' + '=' * 20, '| Desafio 68 |', '=' * 20 + '\033[m')
+print('\033[1;33m' + '=' * 20, '| Desafio 69 |', '=' * 20 + '\033[m')
 
 '''
 Crie um programa que leia a idade e o sexo de várias pessoas.
