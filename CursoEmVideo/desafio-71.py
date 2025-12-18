@@ -1,4 +1,4 @@
-print('\033[1;33m' + '=' * 20, '| Desafio 68 |', '=' * 20 + '\033[m')
+print('\033[1;33m' + '=' * 20, '| Desafio 71 |', '=' * 20 + '\033[m')
 
 ''' Crie um programa que simule o funcionamento de um caixa eletrônico. No início, pergunte ao usuário qual será o valor a ser sacado (número inteiro)
 e o programa vai informar quantas cédulas de cada valor serão entregues
