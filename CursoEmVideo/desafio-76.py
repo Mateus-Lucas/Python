@@ -1,4 +1,4 @@
-print('\033[1;33m' + '=' * 20, '| Desafio 75 |', '=' * 20 + '\033[m')
+print('\033[1;33m' + '=' * 20, '| Desafio 76 |', '=' * 20 + '\033[m')
 
 ''' Crie um programa que tenha uma tupla única com nomes de produtos e seus respectivos preços, na sequência. 
 No final, mostre uma listagem de preços. organizando os dados em forma tabular'''
