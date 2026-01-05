@@ -1,4 +1,3 @@
-# Título formatado em amarelo (código ANSI)
 print('\033[1;33m' + '=' * 20, '| Desafio 80 |', '=' * 20 + '\033[m')
 
 '''
