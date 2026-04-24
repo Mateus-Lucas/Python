@@ -4,7 +4,7 @@ print('\033[1;33m' + '=' * 20 + ' | Desafio 107 | ' + '=' * 20 + '\033[m')
 aumentar(), diminuir(), dobro() e metade(). Faça também um programa que
 importe esse módulo e use algumas dessas funções'''
 
-import moeda
+from desafio107 import moeda
 
 p = float(input('Informe o preço: R$'))
 
