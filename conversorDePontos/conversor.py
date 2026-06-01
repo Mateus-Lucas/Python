@@ -1,40 +1,36 @@
-def conversor_prime(pontos):
-    return (pontos / 100) * 5.04
-
-def conversor_toluna(pontos):
-    return pontos / 1360
-
-def conversor_ysense(valor_dolar):
-    return valor_dolar * 5.9
-
-
 print('=' * 30)
 print('CONVERSOR DE PESQUISAS')
 print('=' * 30)
 
-prime = conversor_prime(
-    int(input('Pontos Prime Opinion: '))
-)
+print('\n--- VALORES INICIAIS ---')
+prime_inicial = int(input('Prime Opinion: '))
+toluna_inicial = int(input('Toluna: '))
+ysense_inicial = float(input('ySense (US$): '))
 
-toluna = conversor_toluna(
-    int(input('Pontos Toluna: '))
-)
+print('\n--- VALORES FINAIS ---')
+prime_final = int(input('Prime Opinion: '))
+toluna_final = int(input('Toluna: '))
+ysense_final = float(input('ySense (US$): '))
 
-ysense = conversor_ysense(
-    float(input('Valor em dólar no ySense: '))
-)
+prime = ((prime_final - prime_inicial) / 100) * 5.04
+toluna = (toluna_final - toluna_inicial) / 1360
+ysense = (ysense_final - ysense_inicial) * 5.90
 
 total = prime + toluna + ysense
+meta = float(input('\nMeta do dia (R$): '))
 
-meta = float(input('Meta do dia (R$): '))
-
-print('\n--- RESULTADO ---')
-print(f'Prime Opinion: R$ {prime:.2f}')
-print(f'Toluna:        R$ {toluna:.2f}')
-print(f'ySense:        R$ {ysense:.2f}')
-print(f'Total:         R$ {total:.2f}')
+print(f'''
+{'=' * 30}
+RESULTADO
+{'=' * 30}
+Prime Opinion: R$ {prime:.2f}
+Toluna:        R$ {toluna:.2f}
+ySense:        R$ {ysense:.2f}
+------------------------------
+Total:         R$ {total:.2f}
+''')
 
 if total >= meta:
-    print(f'\n✅ Meta batida! Você ultrapassou em R$ {total - meta:.2f}')
+    print(f'✅ Meta batida! Sobrou R$ {total - meta:.2f}')
 else:
-    print(f'\n❌ Ainda faltam R$ {meta - total:.2f} para atingir a meta.')
+    print(f'❌ Faltam R$ {meta - total:.2f}')
