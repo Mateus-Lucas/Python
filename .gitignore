@@ -1,3 +1,13 @@
+# Ambiente virtual
+.venv/
+
+# Arquivos Python
+__pycache__/
+*.pyc
+
+# Dados do usuário
+dados/historico.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
